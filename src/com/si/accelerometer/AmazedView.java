@@ -86,6 +86,7 @@ public class AmazedView extends View {
 	private float mSensorBuffer = 0;
 	// http://code.google.com/android/reference/android/hardware/SensorManager.html#SENSOR_ACCELEROMETER
 	// for an explanation on the values reported by SENSOR_ACCELEROMETER.
+	@SuppressWarnings("deprecation")
 	private final SensorListener mSensorAccelerometer = new SensorListener() {
 		// method called whenever new sensor values are reported.
 		public void onSensorChanged(int sensor, float[] values) {
